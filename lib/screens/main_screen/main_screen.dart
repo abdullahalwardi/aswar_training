@@ -1,3 +1,4 @@
+import 'package:aswar_training/screens/profile/profile_screen.dart';
 import 'package:aswar_training/widgets/buttons/default_button.dart';
 import 'package:flutter/material.dart';
 
@@ -44,7 +45,7 @@ class _MainScreenState extends State<MainScreen> {
                         const Align(
                             alignment: Alignment.centerRight,
                             child: Text(
-                              'مرحبا، محمد اثير ساطع',
+                              'مرحبا، عبدالله هيثم',
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 24,
@@ -155,6 +156,8 @@ class _MainScreenState extends State<MainScreen> {
                           iconColor: Colors.teal,
                           title: 'ملفي الشخصي',
                           description: 'معلومات الملف',
+                          onTap: () =>
+                              Navigator.pushNamed(context, ProfileScreen.id),
                         ),
                         const SizedBox(
                           height: kDefaultPadding,

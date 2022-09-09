@@ -1,5 +1,6 @@
 import 'package:aswar_training/screens/auth/login/login_screen.dart';
 import 'package:aswar_training/screens/main_screen/main_screen.dart';
+import 'package:aswar_training/screens/profile/profile_screen.dart';
 import 'package:aswar_training/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -89,11 +90,11 @@ class MyApp extends StatelessWidget {
                         error: Colors.redAccent,
                       ),
                   cardColor: kPrimaryColor),
-              home: LoginScreen(),
-              initialRoute: MainScreen.id,
+              initialRoute: LoginScreen.id,
               routes: {
                 LoginScreen.id: (context) => LoginScreen(),
-                MainScreen.id: (context) => MainScreen()
+                MainScreen.id: (context) => MainScreen(),
+                ProfileScreen.id: (context) => ProfileScreen()
               });
         });
   }
